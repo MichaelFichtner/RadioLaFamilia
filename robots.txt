@@ -1,0 +1,15 @@
+# robots.txt
+User-agent: *
+Disallow: /administration/
+Disallow: /downloads/
+Disallow: /forum/attachments/
+Disallow: /includes/
+Disallow: /locale/
+Disallow: /themes/
+Disallow: /contact.php
+Disallow: /login.php
+Disallow: /lostpassword.php
+Disallow: /reactivate.php
+Disallow: /register.php
+Disallow: /setuser.php
+Disallow: /submit.php

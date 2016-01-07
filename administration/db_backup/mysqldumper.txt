@@ -1,0 +1,16 @@
+MySQLDumper version:
+v1.25 dev from 05.09.2010
+
+1324
+
+
+
+
+
+
+
+
+
+
+
+

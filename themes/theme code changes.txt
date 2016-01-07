@@ -1,0 +1,6 @@
+---
+opentable() is made collapsible like openside()
+
+opentable() has now 3 parameters:
+opentable($title, $collapse = false, $state = "on")
+---

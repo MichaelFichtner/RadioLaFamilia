@@ -1,0 +1,104 @@
+<?php
+// Admin Categories
+$locale['200'] = $settings['sitename']." - Admin Panel";
+$locale['ac00'] = "Admin Home";
+$locale['ac01'] = "Content Admin";
+$locale['ac02'] = "User Admin";
+$locale['ac03'] = "System Admin";
+$locale['ac04'] = "Settings";
+$locale['ac05'] = "Infusions";
+// Admin Sections
+$locale['admin_A'] = "Articles";
+$locale['admin_AC'] = "Article Categories";
+$locale['admin_AD'] = "Administrators";
+$locale['admin_ADS'] = "Advertising System";
+$locale['admin_AL'] = "Admin/Mod&acute;s Action Log";
+$locale['admin_B'] = "Blacklist";
+$locale['admin_BB'] = "BB Codes";
+$locale['admin_C'] = "Comments";
+$locale['admin_CON'] = "Contact Page";
+$locale['admin_CP'] = "Custom Pages";
+$locale['admin_D'] = "Downloads";
+$locale['admin_DC'] = "Download Categories";
+$locale['admin_DB'] = "MySQLDumper (DB Backup)";
+$locale['admin_F'] = "Forums";
+$locale['admin_FQ'] = "FAQs";
+$locale['admin_FMD'] = "Forum Moderator Rights";
+$locale['admin_FR'] = "Forum Ranks";
+$locale['admin_GM'] = "Global Moderators";
+$locale['admin_I'] = "Infusions";
+$locale['admin_IP'] = "Infusion Panels";
+$locale['admin_IM'] = "Images";
+$locale['admin_LAN'] = "Language";
+$locale['admin_M'] = "Members";
+$locale['admin_N'] = "News";
+$locale['admin_NC'] = "News Categories";
+$locale['admin_P'] = "Panels";
+$locale['admin_PI'] = "PHP Info";
+$locale['admin_PH'] = "Photo Albums";
+$locale['admin_PO'] = "Polls";
+$locale['admin_S'] = "Shoutbox";
+$locale['admin_SB'] = "Banners";
+$locale['admin_SU'] = "Submissions";
+$locale['admin_SL'] = "Site Links";
+$locale['admin_SEO'] = "SEO Url-Rewrite";
+$locale['admin_SM'] = "Smileys";
+$locale['admin_S1'] = "Main Settings";
+$locale['admin_S2'] = "Time and Date";
+$locale['admin_S3'] = "Forum";
+$locale['admin_S4'] = "Registration";
+$locale['admin_S5'] = "Photo Gallery";
+$locale['admin_S6'] = "Miscellaneous";
+$locale['admin_S7'] = "Private Message Options";
+$locale['admin_S8'] = "News";
+$locale['admin_S9'] = "User Management";
+$locale['admin_S10'] = "Items per Page";
+$locale['admin_S11'] = "Downloads";
+$locale['admin_S12'] = "Security";
+$locale['admin_S13'] = "Admin Menu";
+$locale['admin_U'] = "Upgrade";
+$locale['admin_UF'] = "User Fields";
+$locale['admin_UFC'] = "User Field Categories";
+$locale['admin_UG'] = "User Groups";
+$locale['admin_W'] = "Web Links";
+$locale['admin_WC'] = "Web Link Categories";
+$locale['admin_WEL'] = "Welcome Panel";
+$locale['admin_WAR'] = "Warnings";
+// Site Information
+$locale['250'] = "Information";
+$locale['254'] = "News Submissions:";
+$locale['255'] = "Article Submissions:";
+$locale['256'] = "Link Submissions:";
+$locale['257'] = "Comments:";
+$locale['258'] = "Shoutbox Posts:";
+$locale['259'] = "Forum Posts:";
+$locale['260'] = "Photo Submissions:";
+$locale['261'] = "Gallery Photos:";
+// Pimped: User Status
+$locale['sta000'] = "Active Members";
+$locale['sta001'] = "Banned Members";
+$locale['sta002'] = "Unactivated Members:";
+$locale['sta003'] = "Suspended Members:";
+$locale['sta004'] = "Security Banned Members:";
+$locale['sta005'] = "Canceled Members:";
+$locale['sta006'] = "Anonymized Accounts (Terminated account):";
+$locale['sta007'] = "Accounts marked as inactive:";
+$locale['sta008'] = "Inactive Members:";
+// Pimped: version check
+$locale['ver000'] = "Version Checker";
+$locale['ver001'] = "Your version of Pimped-Fusion is uptodate";
+$locale['ver002'] = "Your version of Pimped-Fusion is not uptodate!";
+$locale['ver003'] = "Your version:";
+$locale['ver004'] = "Latest version:";
+$locale['ver005'] = "Click the following Link to see if your version of Pimped-Fusion is uptodate:";
+$locale['ver006'] = "here";
+// Admin Notes Panel
+$locale['note_01'] = "Admin Notes Panel";
+$locale['note_02'] = "Post It";
+$locale['note_03'] = "Delete";
+$locale['note_04'] = "Note Deleted";
+// Navigation sdmenue
+$locale['sdme100'] = "Back to Site";
+$locale['sdme101'] = "Expand all sitelinks";
+$locale['sdme102'] = "Close all sitelinks";
+?>

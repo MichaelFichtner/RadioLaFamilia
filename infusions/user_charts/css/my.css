@@ -1,0 +1,151 @@
+#usercharts{
+    width: 750px;
+    margin: 0 auto;
+    color: #EAA022;
+    font-size: 15px;
+
+}
+
+.table {
+    width:100%;
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+
+    /*padding:5px;*/
+}
+.table th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background: #c3211b;
+    font-size: 16px;
+}
+.table td {
+    border:1px solid #C0C0C0;
+    text-align:center;
+    padding:5px;
+    font-size: 13px;
+}
+
+.table_panel {
+    width:100%;
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+
+    /*padding:5px;*/
+}
+.table_panel th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background: #c3211b;
+    font-size: 16px;
+}
+.table_panel td {
+    border:1px solid #C0C0C0;
+    text-align:center;
+    padding:5px;
+    font-size: 13px;
+}
+
+.table_img {
+    width: 100%;
+}
+/*input[type=range] {*/
+    /*-webkit-appearance: none;*/
+    /*width: 100%;*/
+    /*border-radius: 8px;*/
+    /*height: 7px;*/
+    /*border: 1px solid #bdc3c7;*/
+    /*background-color: #fff;*/
+/*}*/
+
+.text{
+    text-align: center;
+    color: #EAA022;
+    font-size: 25px;
+}
+
+#gruenerman{
+    height: 75px;
+}
+
+#cover{
+    height: 60px;
+}
+
+#auswahl input{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 150px;
+}
+
+/* Admin Bereich*/
+
+#a_context{
+    width:75%;
+    background-color: #006677;
+    float: left;
+    min-height: 500px
+}
+
+#header ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#header li {
+    display: inline;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+    margin: 0 0.5em 0 0;
+}
+
+#header li a {
+    padding: 0 1em;
+}
+
+#header #selected {
+    padding-bottom: 1px;
+    background: white;
+}
+
+#header li {
+    float: left;
+    border: 1px solid;
+    border-bottom-width: 0;
+    margin: 0 0.5em 0 0;
+}
+
+#status {
+    background-color: #670518;
+    color: wheat;
+    text-align: center;
+    padding: 1px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+/* Übersicht Tabelle */
+
+table.GeneratedTable {
+    width:100%;
+    background-color:#FFFFFF;
+    border-collapse:collapse;
+    border-width:1px;
+    border-color:#336600;
+    border-style:solid;
+    color:#000033;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+    border-width:1px;
+    border-color:#336600;
+    border-style:solid;
+    padding:3px;
+}
+
+table.GeneratedTable thead {
+    background-color:#CCFF99;
+}

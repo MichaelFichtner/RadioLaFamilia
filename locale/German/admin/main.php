@@ -1,0 +1,104 @@
+<?php
+// Admin Categories
+$locale['200'] = $settings['sitename']." - Administration";
+$locale['ac00'] = "Admin Home";
+$locale['ac01'] = "Content Admin";
+$locale['ac02'] = "User Admin";
+$locale['ac03'] = "System Admin";
+$locale['ac04'] = "Einstellungen";
+$locale['ac05'] = "Infusionen";
+// Admin Sections
+$locale['admin_A'] = "Artikel";
+$locale['admin_AC'] = "Artikel Kategorien";
+$locale['admin_AD'] = "Administratoren";
+$locale['admin_ADS'] = "Advertising System";
+$locale['admin_AL'] = "Admin/Mod&acute;s Action Log";
+$locale['admin_B'] = "Blacklist";
+$locale['admin_BB'] = "BB Codes";
+$locale['admin_C'] = "Kommentare";
+$locale['admin_CON'] = "Kontakt-Seite";
+$locale['admin_CP'] = "Eigene Seiten";
+$locale['admin_D'] = "Downloads";
+$locale['admin_DC'] = "Download Kategorien";
+$locale['admin_DB'] = "MySQLDumper (DB Backup)";
+$locale['admin_F'] = "Foren";
+$locale['admin_FQ'] = "FAQs";
+$locale['admin_FMD'] = "Forum Moderator-Rechte";
+$locale['admin_FR'] = "Forum R&auml;nge";
+$locale['admin_GM'] = "Globale Moderatoren";
+$locale['admin_I'] = "Infusionen";
+$locale['admin_IP'] = "Infusion Panels";
+$locale['admin_IM'] = "Bilder";
+$locale['admin_LAN'] = "Sprache";
+$locale['admin_M'] = "Mitglieder";
+$locale['admin_N'] = "News";
+$locale['admin_NC'] = "News Kategorien";
+$locale['admin_P'] = "Panels";
+$locale['admin_PI'] = "PHP Info";
+$locale['admin_PH'] = "Fotoalben";
+$locale['admin_PO'] = "Umfragen";
+$locale['admin_S'] = "Shoutbox";
+$locale['admin_SB'] = "Banners";
+$locale['admin_SU'] = "Eingereichtes";
+$locale['admin_SL'] = "Seitenlinks";
+$locale['admin_SEO'] = "SEO Url-Rewrite";
+$locale['admin_SM'] = "Smilies";
+$locale['admin_S1'] = "Haupteinstellungen";
+$locale['admin_S2'] = "Zeit- und Datumsanzeige";
+$locale['admin_S3'] = "Foren";
+$locale['admin_S4'] = "Registrierung";
+$locale['admin_S5'] = "Fotogalerie";
+$locale['admin_S6'] = "Sonstige Einstellungen";
+$locale['admin_S7'] = "Private Nachrichten";
+$locale['admin_S8'] = "News";
+$locale['admin_S9'] = "User Verwaltung";
+$locale['admin_S10'] = "Elemente pro Seite";
+$locale['admin_S11'] = "Downloads";
+$locale['admin_S12'] = "Sicherheit";
+$locale['admin_S13'] = "Adminmen&uuml;";
+$locale['admin_U'] = "Upgrade";
+$locale['admin_UF'] = "Profilfelder";
+$locale['admin_UFC'] = "Profilfelder Kategorien";
+$locale['admin_UG'] = "Benutzergruppen";
+$locale['admin_W'] = "WebLinks";
+$locale['admin_WC'] = "WebLink Kategorien";
+$locale['admin_WEL'] = "Willkommens-Panel";
+$locale['admin_WAR'] = "Verwarnungen";
+// Site Information
+$locale['250'] = "Information";
+$locale['254'] = "Eingereichte News:";
+$locale['255'] = "Eingereichte Artikel:";
+$locale['256'] = "Eingereichte Links:";
+$locale['257'] = "Kommentare:";
+$locale['258'] = "Shoutbox Beitr&auml;ge:";
+$locale['259'] = "Foren Beitr&auml;ge:";
+$locale['260'] = "Eingereichte Fotos:";
+$locale['261'] = "Galerie Fotos:";
+// Pimped: User Status
+$locale['sta000'] = "Aktive Mitglieder";
+$locale['sta001'] = "Gesperrte Mitglieder";
+$locale['sta002'] = "Unaktivierte Mitglieder:";
+$locale['sta003'] = "Tempor&auml;r gesperrte Mitglieder:";
+$locale['sta004'] = "Sicherheitsgesperrte Mitglieder:";
+$locale['sta005'] = "Mitgliedschaft beendet:";
+$locale['sta006'] = "Anonymisiert Accounts (Mitgliedschaft beendet):";
+$locale['sta007'] = "Accounts, die als inaktiv markiert sind:";
+$locale['sta008'] = "Inaktive Mitglieder:";
+// Pimped: version check
+$locale['ver000'] = "Version Checker";
+$locale['ver001'] = "Deine Version von Pimped-Fusion ist uptodate";
+$locale['ver002'] = "Deine Version von Pimped-Fusion ist nicht uptodate!";
+$locale['ver003'] = "Deine Version:";
+$locale['ver004'] = "Die aktuelle Version:";
+$locale['ver005'] = "Klicke den folgenden Link, um zu sehen ob deine Version von Pimped-Fusion uptodate ist:";
+$locale['ver006'] = "hier";
+// Admin Notes Panel
+$locale['note_01'] = "Admin-Notiz Panel";
+$locale['note_02'] = "Notiz senden";
+$locale['note_03'] = "L&ouml;schen";
+$locale['note_04'] = "Notiz gel&ouml;scht";
+// Navigation sdmenue
+$locale['sdme100'] = "Zur Website";
+$locale['sdme101'] = "Alle Men&uuml;&acute;s aufklappen";
+$locale['sdme102'] = "Alle Men&uuml;&acute;s zuklappen";
+?>

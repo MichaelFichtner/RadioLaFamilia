@@ -1,0 +1,102 @@
+/*
+*
+* The following CSS Classes have been added in Pimped-Fusion
+*
+*
+*/
+
+
+/*
+*
+* New CSS-Definitions for:
+*
+* <fieldset>
+* [ User Signatur, Edited-By-Message, Forum-Attachments ]
+*
+* <legend>
+* [ User Signatur, Forum-Attachments ]
+*
+* NEW CSS Classes:
+*
+* multi
+* [Forum: Upload of Attachments, this class could be the same as the class .textbox]
+*
+* forum_attachments
+* [Forum Attachment: this is the class of a <fieldset> in viewthread.php ]
+*
+* forum_attachments_legend
+* [Forum Attachment: this is the class of a <legend> in viewthread.php ]
+*
+* forum_attachments_content
+* [Forum Attachment: this is the class of a <div> in viewthread.php ]
+*
+* forum_edit
+* [Forum: Edited Posts: this is the class of a <fieldset> in viewthread.php ]
+*
+* forum_signatur
+* [Forum: Signatur: this is the class of a <fieldset> in viewthread.php ]
+*
+* forum_signatur_legend
+* [Forum: Signatur: this is the class of a <legend> in viewthread.php ]
+*
+* viewpage
+* [viewpage.php a class called viewpage is arounf the content of the custom page]
+*/
+
+/****************
+*** EXAMPLES ***
+****************/
+
+
+/* New for User Signatur, Edited-By-Message, Forum-Attachments - added in PiF v0.05.00 */
+
+fieldset {
+	border: 1px solid #ccc;
+	margin-top:15px;
+}
+
+legend {
+	border: 1px solid #ccc;
+	width: auto;
+	margin: 5px;
+	padding: 2px 6px
+} 
+
+
+/* Forum Attachments - added in PiF v0.05.00 */
+
+.forum_attachments_content {
+	padding: 5px;
+}
+
+/* Forum Attachments Multi-Uploads. This class could be the same as the class .textbox - added in PiF v0.05.00 */
+
+.multi {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #555;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+}
+
+/* Tooltip - added in PiF v0.05.00 */
+
+#tooltip {
+	position:absolute;
+	border:1px solid #333;
+	background:#f1f1f1;
+	padding:2px 5px;
+	color:#555;
+	display:none;
+	width:300px;
+	opacity:0.8;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+
+/* content of viewpage.php */
+
+.viewpage {
+	padding: 4px;
+}

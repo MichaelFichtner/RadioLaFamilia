@@ -1,0 +1,57 @@
+<?php
+$locale['grtl100'] = "Gr_Teamlist";
+$locale['grtl101'] = "Show your Member on a clear side.";
+$locale['grtl102'] = "Teamlist";
+
+$locale['grtl200'] = "Here you ?";
+$locale['grtl201'] = "Name:";
+$locale['grtl202'] = "Age:";
+$locale['grtl203'] = "N/A";
+$locale['grtl204'] = "Location:";
+$locale['grtl205'] = "Messager:";
+$locale['grtl206'] = "No possibilities";
+$locale['grtl207'] = "Tasks:";
+$locale['grtl208'] = "Music:";
+$locale['grtl209'] = "Still no groups available !";
+$locale['grtl210'] = "Teamlist areas";
+$locale['grtl211'] = "New group";
+$locale['grtl212'] = "New Member";
+$locale['grtl213'] = "Real Name";
+$locale['grtl214'] = "Member Status";
+$locale['grtl215'] = "Status";
+$locale['grtl216'] = "Edit";
+$locale['grtl217'] = "Delete";
+$locale['grtl218'] = "Group edit";
+$locale['grtl219'] = "Group delete";
+$locale['grtl220'] = "Teamlist >> New Member";
+$locale['grtl221'] = "Member";
+$locale['grtl222'] = "Please, dialling";
+$locale['grtl223'] = "No profile";
+$locale['grtl224'] = "Realer Name";
+$locale['grtl225'] = "Member Position";
+$locale['grtl226'] = "Tasks";
+$locale['grtl227'] = "Music";
+$locale['grtl228'] = "Status";
+$locale['grtl229'] = "Aktiv";
+$locale['grtl230'] = "Inaktiv";
+$locale['grtl231'] = "Gruppe";
+$locale['grtl232'] = "Position";
+$locale['grtl233'] = "Registration";
+$locale['grtl234'] = "To the main overview";
+$locale['grtl235'] = "Teamlist >> Member edit";
+$locale['grtl236'] = "Change";
+$locale['grtl237'] = "Teamlist >> New Group";
+$locale['grtl238'] = "Group Name";
+$locale['grtl239'] = "Group Pic";
+$locale['grtl240'] = "Group Position";
+$locale['grtl241'] = "Teamlist >> Group edit";
+$locale['grtl242'] = "DJ Bild";
+$locale['grtl243'] = "Avatar";
+$locale['grtl244'] = "<span style='color:#ff0000'>* </span> - Duty field";
+$locale['grtl245'] = "<span style='color:#ff0000'>**</span> - Choice whether picture or Avatar";
+$locale['grtl246'] = "Group Status";
+$locale['grtl247'] = "Open";
+$locale['grtl248'] = "Closed";
+$locale['grtl249'] = "Still no member available !";
+
+?>

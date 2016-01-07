@@ -1,0 +1,29 @@
+<html><head><title>Webplayer</title></head><body>
+
+<?php include("config.php"); $shoutcast = new ShoutCast(); $shoutcast->host; $shoutcast->port; $shoutcast->tunein; $shoutcast->passwd; ?>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<p> 
+<OBJECT ID="MediaPlayer" classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" 
+CODEBASE="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,5,715" 
+width="100%" height="100%" standby="Loading Microsoft Windows Media Player components..." 
+type="application/x-oleobject"> 
+<PARAM NAME="FileName" VALUE="http://<?php echo $shoutcast->host; ?>:<?php echo $shoutcast->tunein; ?>/"> 
+<PARAM NAME="TransparentAtStart" Value="true"> 
+<PARAM NAME="AutoStart" Value="true"> 
+<PARAM NAME="AnimationatStart" Value="false"> 
+<PARAM NAME="ShowStatusBar" Value="true"> 
+<PARAM NAME="ShowControls" Value="true"> 
+<PARAM NAME="autoSize" Value="false"> 
+<PARAM NAME="displaySize" Value="false"> 
+<PARAM NAME="ShowAudioControls" Value="true"> 
+<PARAM NAME="ShowPositionControls" Value="false"> 
+<Embed type="application/x-mplayer2" 
+pluginspage="http://www.microsoft.com/Windows/Downloads/Contents/Products/MediaPlayer/" 
+src="http://<?php echo $shoutcast->host; ?>:<?php echo $shoutcast->tunein; ?>/" Name="MediaPlayer" 
+width="100%" height="100%" transparentAtStart="1" autostart="1" 
+animationAtStart="0" ShowControls="true" ShowAudioControls="1" 
+ShowPositionControls="0" autoSize="0" ShowStatusBar="1" displaySize="false"> 
+</embed></OBJECT></p>
+</body></html>

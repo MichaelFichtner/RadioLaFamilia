@@ -1,0 +1,165 @@
+##############################
+## Pimped-Fusion v0.08.00
+## http://pimped-fusion.net
+##############################
+
+<Files ~ "(maincore|config)+\.php$">
+Order deny,allow
+deny from all
+</Files>
+
+<Files ~ ".+\.(bak|conf|exe|sh|linux|run|bat|lnk|com|pif|xll|dll|cmd|old)$">
+Order deny,allow
+deny from all
+</Files>
+
+####################
+# Rewrite Engine
+#
+RewriteEngine on
+
+####################
+# Rewrite-Base
+# If you are running this script in your root-folder:
+# RewriteBase /
+# If you are NOT running this script in your root-folder, but in a sub folder:
+# RewriteBase /your_folder/
+#
+RewriteBase /
+
+####################
+# redirect yourdomain.com to www.yourdomain.com
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule (.*) http://www.%{HTTP_HOST}/$1 [L,R=301]
+#
+
+####################
+# redirect www.yourdomain.com to yourdomain.com
+# you need to modify the rule, if you wanna use it
+# RewriteCond %{HTTP_HOST} ^www\.yourdomain\.de$ 
+# RewriteRule ^(.*)$ http://yourdomain.de/$1 [L,R=301]
+#
+
+
+##############
+## Rewrites ##
+##############
+
+## Index
+
+RewriteRule ^index.html$ index.php [L]
+
+## News
+
+RewriteRule ^news.html$ news.php [L]
+RewriteRule ^news-page-([0-9]{1,15})\.html$ news.php?page=$1 [L]
+RewriteRule ^news-([0-9]{1,15})-(.*)\.html$ news.php?readmore=$1 [L]
+RewriteRule ^news-category.html$ news_cats.php [L]
+RewriteRule ^news-category-([0-9]{1,15})-(.*)\.html$ news_cats.php?cat_id=$1 [L]
+
+## Profile
+
+RewriteRule ^profile-([0-9]{1,15})-(.*)\.html$ profile.php?lookup=$1 [L]
+RewriteRule ^group-([0-9]{1,15})-(.*)\.html$ profile.php?group_id=$1 [L]
+
+## Article
+
+RewriteRule ^articles.html$ articles.php [L]
+RewriteRule ^article-([0-9]{1,15})-page-([0-9]{1,15})-cstart-([0-9]{1,15})-(.*)\.html$ articles.php?article_id=$1&page=$2&c_start=$3 [L]
+RewriteRule ^article-([0-9]{1,15})-page-([0-9]{1,15})-(.*)\.html$ articles.php?article_id=$1&page=$2 [L]
+RewriteRule ^article-([0-9]{1,15})-(.*)\.html$ articles.php?article_id=$1 [L]
+RewriteRule ^article-cat-([0-9]{1,15})-page-([0-9]{1,15})-(.*)\.html$ articles.php?cat_id=$1&page=$2 [L]
+RewriteRule ^article-cat-([0-9]{1,15})-(.*)\.html$ articles.php?cat_id=$1 [L]
+
+## FAQ
+
+RewriteRule ^faq.html$ faq.php [L]
+RewriteRule ^faq-cat-([0-9]{1,15})-(.*)\.html$ faq.php?cat_id=$1 [L]
+#RewriteRule ^faq-cat-([0-9]{1,15})-page-([0-9]{1,15})-(.*)\.html$ faq.php?cat_id=$1&page=$2 [L]
+
+## weblinks
+
+RewriteRule ^weblinks.html$ weblinks.php [L]
+RewriteRule ^weblinks-cat-([0-9]{1,15})-page-([0-9]{1,15})-(.*)\.html$ weblinks.php?cat_id=$1&page=$2 [L]
+RewriteRule ^weblinks-cat-([0-9]{1,15})-(.*)\.html$ weblinks.php?cat_id=$1 [L]
+RewriteRule ^weblink-([0-9]{1,15})-(.*)\.html$ weblinks.php?weblink_id=$1 [L]
+
+## Downloads
+
+RewriteRule ^downloads.html$ downloads.php [L]
+RewriteRule ^download-cat-([0-9]{1,15})-page-([0-9]{1,15})-(.*)\.html$ downloads.php?cat_id=$1&page=$2 [L]
+RewriteRule ^download-cat-([0-9]{1,15})-(.*)\.html$ downloads.php?cat_id=$1 [L]
+RewriteRule ^download-([0-9]{1,15})-(.*)\.html$ downloads.php?id=$1 [L]
+
+## Contact
+
+RewriteRule ^contact.html$ contact.php
+
+## Register, Lostpassword
+
+RewriteRule ^register.html$ register.php
+RewriteRule ^lostpassword.html$ lostpassword.php
+
+## Maintenance
+
+RewriteRule ^maintenance.html$ maintenance.php
+
+## Members
+
+RewriteRule ^members.html$ members.php
+RewriteRule ^members-sortby-([a-zA-Z0-9_]+)-p-([0-9]+)\.html$ members.php?sortby=$1&page=$2 [L]
+RewriteRule ^members-p-([a-zA-Z0-9_]+)\.html$ members.php?page=$1 [L]
+RewriteRule ^members-sortby-([a-zA-Z0-9_]+)\.html$ members.php?sortby=$1 [L]
+
+## Edit Profile
+
+RewriteRule ^edit_profile.html$ edit_profile.php
+RewriteRule ^edit_profile-update_profile-ok.html$ edit_profile.php?update_profile=ok
+
+## Messages
+
+RewriteRule ^messages.html$ messages.php
+RewriteRule ^messages-inbox.html$ messages.php?folder=inbox
+RewriteRule ^messages-outbox.html$ messages.php?folder=outbox
+RewriteRule ^messages-archive.html$ messages.php?folder=archive
+
+## Custom Pages
+
+RewriteRule ^page-([0-9]+)-cstart-([0-9]+)-(.*)\.html$ viewpage.php?page_id=$1&c_start=$2 [L]
+RewriteRule ^page-([0-9]+)-(.*)\.html$ viewpage.php?page_id=$1 [L]
+
+## Search
+
+RewriteRule ^search.html$ search.php
+
+## Submits
+
+RewriteRule ^submit-photo.html$ submit.php?stype=p [L]
+RewriteRule ^submit-article.html$ submit.php?stype=a [L]
+RewriteRule ^submit-news.html$ submit.php?stype=n [L]
+RewriteRule ^submit-link.html$ submit.php?stype=l [L]
+
+## Login, Logout
+
+RewriteRule ^logout.html$ setuser.php?logout=yes [L]
+RewriteRule ^login.html$ login.php
+
+## Forum
+
+RewriteRule ^forum.html$ forum/index.php [L]
+RewriteRule ^forum-([0-9]+)-page-([0-9]+)-(.*)\.html$ forum/viewforum.php?forum_id=$1&page=$2 [L]
+RewriteRule ^forum-([0-9]+)-(.*)\.html$ forum/viewforum.php?forum_id=$1 [L]
+RewriteRule ^forum-thread-([0-9]+)-pid([0-9]+)-(.*).html$ forum/viewthread.php?thread_id=$1&pid=$2 [L]
+RewriteRule ^forum-thread-([0-9]+)-start([0-9]+)-(.*)\.html$ forum/viewthread.php?thread_id=$1&page=$2 [L]
+RewriteRule ^forum-thread-([0-9]+)-(.*)\.html$ forum/viewthread.php?thread_id=$1 [L]
+RewriteRule ^forum-newthread-([0-9]+)\.html$ forum/post.php?action=newthread&forum_id=$1 [L]
+
+## Photogallery
+
+RewriteRule ^photogallery.html$ photogallery.php
+RewriteRule ^photogallery-([0-9]+).html$ photogallery.php?page=$1 [L]
+RewriteRule ^photogallery-album-([0-9]+)-([0-9]+)-(.*)\.html$ photogallery.php?album_id=$1&page=$2 [L]
+RewriteRule ^photogallery-album-([0-9]+)-(.*)\.html$ photogallery.php?album_id=$1 [L]
+RewriteRule ^photo-([0-9]+)-(.*).html$ photogallery.php?photo_id=$1 [L]
+
+##############

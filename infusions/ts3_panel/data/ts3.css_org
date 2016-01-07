@@ -1,0 +1,70 @@
+
+/**
+ * TSStatus: Teamspeak 3 viewer for php5
+ * @author Sebastien Gerard <sebeuu@gmail.com>
+ * @see http://tsstatus.sebastien.me/
+ * 
+ **/
+
+.tsstatus{
+	overflow: hidden;
+	position: relative;
+}
+.tsstatus, .tsstatus *{
+	font-family: Verdana;
+	font-size: 10px;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	white-space:nowrap;
+}
+.tsstatuserror{
+	font-family: Verdana;
+	font-size: 10px;
+	color: red;
+}
+.tsstatus .tsstatusNickname, .tsstatus .tsstatusPassword{
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 2px;
+	margin-bottom: 2px;
+}
+.tsstatus .tsstatusServerName{
+	
+}
+.tsstatus input{
+	height: 18px;
+}
+.tsstatus .tsstatusItem{
+	margin-left: 18px;
+	clear: both;
+}
+.tsstatus .tsstatusLabel{
+	float: left;
+}
+.tsstatus .tsstatusFlags{
+	position: absolute;
+	right: 0;
+	clear: right;
+}
+.tsstatus a{
+	text-decoration: none;
+	color: #f1f1f1;
+}
+.tsstatus a:hover{
+	text-decoration: underline;
+	color: #f1f1f1;
+}
+.tsstatus img{
+	margin-right: 2px;
+	border: 0;
+}
+
+a.ts3 {
+	font-size:10px;
+	color:#f1f1f1;
+}
+
+a:hover.ts3 {
+	font-size:10px;
+	color:#f1f1f1;
+}

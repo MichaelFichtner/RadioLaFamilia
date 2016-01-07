@@ -1,0 +1,734 @@
+/ed2Violet Radio Theme
+by Wondergekko
+www.puresoundradio.de
+\--------------------------*/
+
+a, a.white, li.white a {
+	color : #000000;
+	text-decoration : none;
+}
+
+a:hover.white, li.white a:hover {
+	color : #000000;
+	text-decoration : none;
+}
+
+a.side {
+	color : #000000;
+	text-decoration : none;
+}
+
+a:hover.side {
+	color : #eaa022;
+	text-decoration : none;
+}
+
+body {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	background-image: url('images/background.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-color : #ffffff;
+
+	margin: 0px auto;
+}
+
+form {
+	margin : 0px;
+}
+
+hr {
+	height : 1px;
+	border : 1px solid #eee;
+}
+
+hr.side-hr {
+	height : 1px;
+	border : 1px solid red;
+}
+
+td {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px; /* 11px */
+	font-weight : bolder; /* new */
+}
+
+pre {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+}
+
+.alt {
+	color : #000000;
+}
+
+img {
+	border: 0px;
+}
+
+#main {width: 900px;}
+
+.main {width: 900px;}
+
+
+.footerback {
+	background-image: url(images/footerbg.png);
+	background-repeat: repeat-x;
+	height: 87px;
+	text-align: center;
+}
+
+.copyleft {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 8px;
+	padding: 1px 1px 25px 20px;
+	width: 50%;
+	text-align: left;
+	color: #2d2d2d;
+}
+#footer a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.copyright {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 8px;
+	color : #2d2d2d;
+	border : 0px;
+	padding : 1px 25px 10px 1px;
+	height: 48px;
+	width: 50%;
+	text-align: right;
+	
+}
+
+.sidefooter {
+    color: #000;	
+    clear:both;
+    display:block;
+    background: url(images/bodybg.png) repeat-y top;
+    padding: 15px 0px 0px 15px;
+}
+
+li.first-link .bullet{
+	display: none;
+}
+
+.button {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #000000;
+	background-color : #ffffff;
+	height : 20px;
+	border : 1px solid #ccc;
+	margin-top : 2px;
+}
+
+.bbcode {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #555;
+	background-color : #fff;
+	border : 1px solid #ccc;
+	margin-top : 2px;
+}
+
+.textbox {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #000000;
+	background-color : #ffffff;
+	border : 1px solid #ccc;
+}
+
+.main-body {
+	font-size : 11px;
+	color : #000;
+	background-color : #fff;
+	padding : 0px 0px 0px 0px;
+}
+
+.setuser_body{
+	background: #00528e;
+	color : #555;
+}
+
+.main-bg {
+	color : #555;
+	//background-color : #ffffff;
+	background: url(images/bodybg.png) repeat-y top;
+	width: 100%;
+	padding: 0px;
+}
+
+.main-bg2 {
+	background: url(images/bginnen.png) repeat-y top;
+	width: 100%;
+	padding : 0px;
+}
+
+.info {
+	color : #555;
+	background-color : #fff;
+	padding : 10px 5px 10px 5px;
+}
+
+* html #info {
+	color : #555;
+	background-color : #fff;
+	padding : 10px 5px 10px 5px;
+}
+
+.border {
+	border : 0px solid #ffffff;
+}
+
+.admin-message {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #555;
+	background-color: #f6f6f6;
+	border: 1px solid #e1e1e1;
+	padding: 3px 4px 5px 4px;
+	margin-bottom: 5px;
+}
+
+.side-body {
+	width: 170px;
+	text-align: left;
+	font-size : 10px;
+	color : #777;
+	background-color : #fff;
+	padding : 4px 4px 4px 7px;
+}
+
+.side-border-left {
+	width: 160px;
+	color : #000;
+	padding : 10px 5px 10px 10px;
+}
+
+.side-border-right {
+	width: 175px;
+	color : #000;
+	padding : 10px 10px 10px 5px;
+}
+
+.news-category {
+	border: 0;
+	margin: 3px 5px 0 0;
+	float: left;
+}
+
+.news-footer {
+	font-size : 10px;
+	color : #555;
+	background-color : #ffffff;
+	padding : 3px 4px 4px 4px;
+}
+
+.capmain {
+    font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bolder;
+	text-align: left;
+	color : #000000;
+    background-image: url('images/post_mag_top.png');
+    background-repeat: no-repeat;
+	height: 30px;
+	padding : 0px 0px 0px 10px;
+}
+
+.capmain-left {
+	width: 3px;
+	height: 25px;
+	background-image: url(images/post_mag_top.gif);
+}
+
+.capmain-right {
+	w
+???BLOCK FEHLT
+	text-align: left;
+	font-size : 10px;
+	color : #777;
+	background-color : #fff;
+	padding : 4px 4px 4px 7px;
+}
+
+.side-border-left {
+	width: 160px;
+	color : #000;
+	padding : 10px 5px 10px 10px;
+}
+
+.side-border-right {
+	width: 175px;
+	color : #000;
+	padding : 10px 10px 10px 5px;
+}
+
+.news-category {
+	border: 0;
+	margin: 3px 5px 0 0;
+	float: left;
+}
+
+.news-footer {
+	font-size : 10px;
+	color : #555;
+	background-color : #ffffff;
+	padding : 3px 4px 4px 4px;
+}
+
+.capmain {
+    font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bolder;
+	text-align: left;
+	color : #000000;
+    background-image: url('images/post_mag_top.png');
+    background-repeat: no-repeat;
+	height: 30px;
+	padding : 0px 0px 0px 10px;
+}
+
+.capmain-left {
+	width: 3px;
+	height: 25px;
+	background-image: url(images/post_mag_top.gif);
+}
+
+.capmain-right {
+	width: 3px;
+	height: 25px;
+	background-image: url(images/post_mag_top.gif);
+}
+
+.scapmain {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+	color : #000;
+	text-align : left;
+	background-image: url('images/sidebar_title.gif');
+    background-repeat:no-repeat;
+	height: 30px;
+	padding : 10px 0px 0px 10px;
+}
+
+
+.tbl-border {
+	color : #000;
+	background-color : #eeeeee;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.spacer {
+	margin-bottom: 15px;
+}
+
+.tbl {
+	font-size : 11px;
+	color : #000;
+	background-color : #fff;
+	padding : 4px;
+}
+
+.tbl1 {
+	font-size : 11px;
+	color : #000;
+	background-color : #fff;
+	padding : 4px;
+}
+
+.tbl2 {
+	font-size : 11px;
+	color : #000;
+	background-color : #fafafa;
+	padding : 4px;
+}
+
+.forum-caption {
+	font-size : 11px;
+	font-weight : bold;
+	color : #000;
+	background-color : #ffffff;
+	padding : 2px 4px 4px 4px;
+}
+
+.quote {
+	font-size : 11px;
+	color : #555;
+	background-color : #f8f8f8;
+	padding : 4px;
+	margin : 0px 20px 0px 20px;
+	border : 1px solid #000;
+}
+
+.poll {
+	height : 12px;
+	border : 1px solid #000000;
+}
+
+.comment-name {
+	font-weight : bold;
+	color : #000;
+}
+
+.shoutboxname {
+	font-weight : bold;
+	color : #000;
+}
+
+.shoutbox {
+	color : #000;
+}
+
+.shoutboxdate {
+	font-size : 10px;
+	color : #000;
+}
+
+.small {
+	font-size : 10px;
+	font-weight : normal;
+}
+
+.small2 {
+	font-size : 10px;
+	font-weight : normal;
+	color : #000000;
+}
+
+.side-small {
+	font-size : 10px;
+	font-weight : normal;
+	color : #000000;
+	background-color : #fff;
+}
+
+.side-label {
+	color : #000;
+	background-color : #eaa022;
+	padding : 2px 2px 3px 2px;
+
+}
+
+.tablebreak { margin-bottom: 8px; }
+
+#navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation h2 {
+	font-size: 12px;
+	color: #000;
+	background-color: #fff;
+	margin: 0;
+	padding: 2px;
+}
+
+#navigation a {
+	display: block;
+	color: #000;
+	padding: 2px;
+	text-decoration : none;
+}
+#navigation a:hover {
+	color: #000;
+	background-color: #eaa022;
+	text-decoration : underline;
+}
+
+* html #navigation ul li{
+   height: 1%;
+}
+
+.center, *[align="center"] {margin: 0 auto;}
+
+/* Page Navigation */
+
+.pagenav {
+	padding: 4px;
+}
+
+.pagenav span {
+	color: #fff;
+	background-color: #f6a504;
+	border: 1px solid #ddd;
+	padding: 2px 4px 2px 4px;
+	margin: 2px;
+}
+
+.pagenav a {
+	color: #555;
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	padding: 2px 4px 2px 4px;
+	margin: 2px;
+	text-decoration: none;
+}
+
+.pagenav a:hover {
+	color: #fff;
+	background-color: #f6a504;
+	margin: 2px;
+	text-decoration: none;
+}
+
+.white-header ul{
+	margin: 0;
+	padding: 0;
+}
+.white-header ul li{ display: inline; }
+.white-header ul li.first-link .bullet{ display: none; }
+
+
+
+/*alt linkler için*/
+#altlinkler{
+	margin: 0px auto;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	height:49px;
+	float:left;
+	background-image:url(images/navi.jpg);
+	background-repeat:no-repeat;
+	background-position:top left;
+	width:100%;
+	padding: 0px 0px 0px 20px;
+}
+
+#altlinkler ul,
+#altlinkler li{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+
+#altlinkler ul{
+	height:49px;
+	line-height:49px; 
+	background-position:right;
+	float:left;
+	padding:0px 1px 0px 0px;
+	margin:0px 0px 0px 20px;
+}
+
+#altlinkler li{
+	height:49px;
+	line-height:39px;
+	display:inline;
+	position:relative; 
+	float:left; 
+	width:100px; 
+	text-align:center;
+}
+
+#altlinkler li a{
+	height:35px;
+	width:100px;
+	text-align:center;
+	float:left;
+	background-position:left;
+	background-repeat:no-repeat;
+}
+
+
+#altlinkler li a:link,
+#altlinkler li a:visited{
+	color:#7F7F7F;
+	text-decoration:none;
+}
+
+#altlinkler li.active a,
+#altlinkler li a:hover{
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+
+.sidenews {
+	font-size : 12px;
+	font-weight : normal;
+	color : #000000;
+}
+
+.sidenav {
+	font-size : 11px;
+	font-weight : normal;
+	color : #000000;
+	background-color : #fff;
+}
+
+.playerback {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	background-image:url(http://www.puresoundradio.de/radioplayermain/images/back.png);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+}
+
+#navbar{
+	margin: 0px auto;
+	font-family : Arial;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	height:45px;
+	float:left;
+	background-image:url(images/navi.jpg);
+	background-repeat:no-repeat;
+	background-position:top left;
+	width:100%;
+	padding: 0px 0px 0px 20px;
+}
+
+.radstat {
+	color : #ffffff;
+	background-color : #fff;
+	background-image: url(images/radstat.png);
+	background-repeat: no-repeat;
+	height:170px;
+	padding : 5px 5px 0px 5px;
+}
+
+.radstatvor {
+	color : #ffffff;
+	background-color : #fff;
+	background-image: url(images/radstatvor.png);
+	background-repeat: no-repeat;
+	height:70px;
+	padding : 5px 5px 0px 5px;
+}
+
+.radstat a {
+	color : #ffffff;
+}
+
+.capmain2 {
+    background-image: url('images/post_mag_top_med.png');
+    background-repeat: no-repeat;
+	height: 30px;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-weight : bolder;
+	text-align: left;
+	color : #000000;
+	padding : 0px 0px 0px 10px;
+}
+
+.headneu {
+	color : #555;
+	/* background-image: url(images/Banner.gif); */
+	background-repeat: no-repeat;
+	height: 256px;
+	padding: 0 0 0 17px;
+}
+.headneu2 {
+	color : #555;
+	background-image: url(images/header2.jpg);
+	background-repeat: no-repeat;
+	height: 162px;
+}
+.sidetop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	width: 175px;
+	height: 39px;
+	background-image: url(images/sidetop.png);
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sidemid {
+	width: 175px;
+	background: url(images/sidebody.png) repeat-y center;
+	padding: 0px 13px 0px 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sidebut {
+	width: 175px;
+	height: 35px;
+	background: url(images/sidebut.png) no-repeat center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.paneltext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #eaa022;
+	text-align:center;
+}
+
+.tabletop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #eaa022;
+	background: url(images/tabletop.png) repeat-x top;
+	height: 39px;
+	text-align:center;
+}
+.tabletoplinks {
+	background-image: url(images/tabletoplinks.png);
+	width: 90px;
+	height: 39px;
+}
+.tabletoprechts {
+	background-image: url(images/tabletoprechts.png);
+	width: 85px;
+	height:39px;
+}
+.tableseitlinks {
+	background-image: url(images/tableseitlinks.png);
+	width:40px;
+	height:1px;
+}
+.tableseitrechts {
+	width:40px;
+	height:1px;
+	background: url(images/tableseitrechts.png) repeat-y top;
+}
+.tbody {
+	font-size: 13px;
+	color: #000000;
+	background: #ffffff;
+	padding: 14px 0px;
+}
+.tablebut {
+	height: 36px;
+	background: url(images/tablebut.png) repeat-x center;
+}
+.tablebutrechts {
+	width: 40px;
+	height: 36px;
+	background-image: url(images/tablebutrechts.png);
+}
+.tablebutlinks {
+	width:40px;
+	height:36px;
+	background-image: url(images/tablebutlinks.png);
+}
+.tablerand {
+	padding: 10px 5px 5px 5px;
+	margin: 0px 5px 5px 5px;
+}
+.grrs a {
+ color : #ffffff;
+}
+

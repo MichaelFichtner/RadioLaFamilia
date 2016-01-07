@@ -1,0 +1,649 @@
+/*
+Name: Sliding Login Panel with jQuery 1.3.2
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: March 26, 2009
+Version: 1.0
+
+	Copyright 2009 Jeremie Tisseau
+	"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
+	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/***** clearfix *****/
+.jqlclear {clear: both;height: 0;line-height: 0;}
+.jqlclearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.jqlclearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .jqlclearfix {height: 1%;}
+.jqlclearfix {display: block;}
+/* End hide from IE-mac */
+.jqlclearfix {height: 1%;}
+.jqlclearfix {display: block;}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+
+/* Panel Tab/button */
+.jqltab {
+  	background: url(../images/tab_b.png) repeat-x 0 0;
+	height: 42px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.jqltab .jqllogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 42px;
+	margin: 0px auto;
+	/*right: 150px;*/
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.jqltab .jqllogin .jqlleft {
+  	background: url(../images/tab_l.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.jqltab .jqllogin .jqlright {
+  	background: url(../images/tab_r.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.jqltab .jqllogin div {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(../images/tab_m.png) repeat-x 0 0;
+}
+
+.jqltab .jqllogin  a {
+	color: #15ADFF;
+}
+
+.jqltab .jqllogin  a:hover {
+	color: white;
+}
+
+.jqltab .jqlseparator {color:#414141}
+
+.jqltab a.jqlopen, .jqltab a.jqlclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 30px !important;
+	cursor: pointer;
+	display: block;
+	width: 120px;
+	position: relative;
+	top: 11px;
+}
+
+.jqltab a.jqlopen {background: url(../images/buttons/bt_open.png) no-repeat left 0;}
+.jqltab a.jqlclose {background: url(../images/buttons/bt_close.png) no-repeat left 0;}
+.jqltab a:hover.jqlopen {background: url(../images/buttons/bt_open.png) no-repeat left -19px;}
+.jqltab a:hover.jqlclose {background: url(../images/buttons/bt_close.png) no-repeat left -19px;}
+
+.jqlgrey {
+	color:#C0C0C0;
+}
+/* sliding panel */
+#jqltoppanel {
+    position: absolute;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+    top: 0;
+	left:0;
+    width: 100%;
+    z-index: 990;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jqlpanel {
+	width: 100%;
+	max-height: 300px;
+	color: #999999;
+	background: #272727;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+
+#jqlpanel h1 {
+	font-size: 1.6em;
+	padding: 5px 0 10px;
+	margin: 0;
+	color: white;
+}
+
+#jqlpanel h2{
+	font-size: 1.2em;
+	padding: 10px 0 5px;
+	margin: 0;
+	color: white;
+}
+
+#jqlpanel p {
+	margin: 5px 0;
+	padding: 0;
+}
+
+#jqlpanel a {
+	text-decoration: none;
+	color: #15ADFF;
+}
+
+#jqlpanel a:hover {
+	color: white;
+}
+
+#jqlpanel a-jqllost-pwd {
+	display: block;
+	float: left;
+}
+
+#jqlpanel .jqlcontent {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#jqlpanel .jqlcontent .jqlleft {
+	width: 280px;
+	float: left;
+	padding: 0 15px;
+	border-left: 1px solid #333;
+}
+
+#jqlpanel .jqlcontent .jqlleft2 {
+	width: 100px;
+	float: left;
+	padding-left: 5px;
+	padding-top: -10px;
+	padding-right: 15px;
+	padding-bottom: -10px;
+	border-right: 1px solid #333;
+}
+
+#jqlpanel .jqlcontent .jqlcenter {
+	width: 70%;
+	float: left;
+	text-align: center;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+}
+
+#jqlpanel .jqlcontent .jqltblcenter {
+	width: 70%;
+	text-align: center;
+	padding-left: 25px;
+	padding-bottom: 5px;
+}
+
+#jqlpanel .jqlcontent .jqlcenter2{
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+}
+
+#jqlpanel .jqlcontent .jqlright {
+	width: 20%;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+	padding: 15px;
+	float: right;
+}
+
+#jqlpanel .jqlcontent form {
+	margin: 0 0 10px 0;
+}
+
+#jqlpanel .jqlcontent label {
+	padding-top: 8px;
+	width: 180px;
+	display: block;
+}
+
+#jqlpanel .jqlcontent input.jqlfield {
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	margin-right: 5px;
+	margin-top: 4px;
+	width: 100px;
+	color: white;
+	height: 16px;
+}
+
+#jqlpanel .jqlcontent input:focus.jqlfield {
+	border: 1px #FFFFA0 solid;
+	background: #545454;
+}
+
+#jqlpanel .jqlcontent input:hover.jqlfield {
+	border: 1px #FFFFA0 solid;
+}
+
+/* BUTTONS */
+/* Login and Register buttons */
+#jqlpanel .jqlcontent input.jqlbt_login,
+#jqlpanel .jqlcontent input.jqlbt_register {
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#jqlpanel .jqlcontent input.jqlbt_login {
+	width: 74px;
+	background: transparent url(../images/buttons/bt_login.png) no-repeat 0 0;
+}
+
+#jqlpanel .jqlcontent input.jqlbt_register {
+	width: 94px;
+	color: white;
+	background: transparent url(../images/buttons/bt_register.png) no-repeat 0 0;
+}
+
+#jqlpanel .jqllost-pwd {
+	display: block;
+	clear: right;
+	padding: 15px 5px 0;
+	font-size: 0.95em;
+	text-decoration: underline;
+}
+
+.jqltooltips {
+    display:none;
+	background: #0C0C0C url(../images/gradient.gif) top left repeat-x; /*fall back gradient image*/
+    background: -moz-linear-gradient(bottom, #0C0C0C, #616161);
+	background: -webkit-gradient(linear, center bottom, center top, from(#0C0C0C), to(#616161));
+	border: 2px solid white;
+    font-size:12px;
+	text-align: left;
+    height:auto;
+    width:auto;
+    padding:10px;
+	margin:5px;
+    color:#fff;
+	-moz-border-radius: 	5px;
+	-webkit-border-radius:	5px;
+	box-shadow: 7px 7px 8px #818181;
+	-webkit-box-shadow: 7px 7px 8px #818181;
+	-moz-box-shadow: 7px 7px 8px #818181;
+}
+
+.jql_button {
+	width: 120px;
+	height: 32px;
+	padding: 3px 5px;
+}
+
+.jql_button_alert {
+	margin:0px auto;
+	white-space: nowrap;
+	width: 130px;
+	height: 16px;
+}
+
+#admin_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/admin_button.png) no-repeat;
+background-position:left top;
+}
+
+#admin_button a:hover {
+background-position: 0 -32px;
+}
+
+#settings_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/settings_button.png) no-repeat;
+background-position:left top;
+}
+
+#settings_button a:hover {
+background-position: 0 -32px;
+}
+
+#members_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/members_button.png) no-repeat;
+background-position:left top;
+}
+
+#members_button a:hover {
+background-position: 0 -32px;
+}
+
+#search_button a {
+display: block;
+width: 90px;
+height: 32px;
+background: transparent url(../images/buttons/search_button.png) no-repeat;
+background-position:left top;
+}
+
+#search_button a:hover {
+background-position: 0 -32px;
+}
+
+#logout_button a {
+display: block;
+width: 90px;
+height: 32px;
+background: transparent url(../images/buttons/logout_button.png) no-repeat;
+background-position:left top;
+}
+
+#logout_button a:hover {
+background-position: 0 -32px;
+}
+
+#pm_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/pm_button.png) no-repeat;
+background-position:left top;
+}
+
+#pm_button a:hover {
+background-position: 0 -32px;
+}
+
+#new_pm_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/new_pm_button.png) no-repeat;
+background-position:left top;
+}
+
+#new_pm_button a:hover {
+background-position: 0 -32px;
+}
+
+#alert_button a {
+display: block;
+width: 130px;
+height: 16px;
+background: transparent url(../images/buttons/alert_button.png) no-repeat;
+background-position:left top;
+}
+
+#alert_button a:hover {
+background-position: 0 -16px;
+}
+
+#avatarstudio_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/avatarstudio_button.png) no-repeat;
+background-position:left top;
+}
+
+#avatarstudio_button a:hover {
+background-position: 0 -32px;
+}
+
+#score_ok_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/score_ok_button.png) no-repeat;
+background-position:left top;
+}
+
+#score_ok_button a:hover {
+background-position: 0 -32px;
+}
+
+#score_not_ok_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/score_not_ok_button.png) no-repeat;
+background-position:left top;
+}
+
+#score_not_ok_button a:hover {
+background-position: 0 -32px;
+}
+
+#downloads_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/downloads_button.png) no-repeat;
+background-position:left top;
+}
+
+#downloads_button a:hover {
+background-position: 0 -32px;
+}
+
+#photo_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/photo_button.png) no-repeat;
+background-position:left top;
+}
+
+#photo_button a:hover {
+background-position: 0 -32px;
+}
+
+#forum_button a {
+display: block;
+width: 90px;
+height: 32px;
+background: transparent url(../images/buttons/forum_button.png) no-repeat;
+background-position:left top;
+}
+
+#forum_button a:hover {
+background-position: 0 -32px;
+}
+
+#submit_button a {
+display: block;
+width: 120px;
+height: 32px;
+background: transparent url(../images/buttons/submit_button.png) no-repeat;
+background-position:left top;
+}
+
+#submit_button a:hover {
+background-position: 0 -32px;
+}
+
+div.jGrowl {
+	padding: 			10px;
+	z-index: 			9999;
+	color: 				#fff;
+	font-size: 			12px;
+}
+
+/** Special IE6 Style Positioning **/
+div.ie6 {
+	position: 			absolute;
+}
+
+div.ie6.top-right {
+	right: 				auto;
+	bottom: 			auto;
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+div.ie6.top-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+div.ie6.bottom-right {
+	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+div.ie6.bottom-left {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+div.ie6.center {
+	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 				100%;
+}
+
+/** Normal Style Positions **/
+body > div.jGrowl {
+	position:			fixed;
+}
+
+body > div.jGrowl.top-left {
+	left: 				0px;
+	top: 				0px;
+}
+
+body > div.jGrowl.top-right {
+	right: 				0px;
+	top: 				0px;
+}
+
+body > div.jGrowl.bottom-left {
+	left: 				0px;
+	bottom:				0px;
+}
+
+body > div.jGrowl.bottom-right {
+	right: 				0px;
+	bottom: 			0px;
+}
+
+body > div.jGrowl.center {
+	top: 				150px;
+	width: 				50%;
+	left: 				25%;
+}
+
+/** Cross Browser Styling **/
+div.center div.jGrowl-notification, div.center div.jGrowl-closer {
+	margin-left: 		auto;
+	margin-right: 		auto;
+}
+
+div.jGrowl div.jGrowl-notification, div.jGrowl div.jGrowl-closer {
+	background-color: 		#FF6A00;
+	color: 					#fff;
+	opacity: 				.85;
+    -ms-filter: 			"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)"; 
+    filter: 				progid:DXImageTransform.Microsoft.Alpha(Opacity=85); 
+	zoom: 					1;
+	width: 					235px;
+	padding: 				10px;
+	margin-top: 			5px;
+	margin-bottom: 			5px;
+	font-family: 			Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 				12px;
+	text-align: 			center;
+	display: 				none;
+	-moz-border-radius: 	5px;
+	-webkit-border-radius:	5px;
+	box-shadow: 7px 7px 8px #818181;
+	-webkit-box-shadow: 7px 7px 8px #818181;
+	-moz-box-shadow: 7px 7px 8px #818181;
+}
+
+div.jGrowl div.jGrowl-notification {
+	min-height: 			40px;
+}
+
+div.jGrowl div.jGrowl-notification div.header {
+	text-align: 			center;
+	font-weight: 			bold;
+	font-size:				13px;
+}
+
+div.jGrowl div.jGrowl-notification div.close {
+	z-index:				99;
+	float: 					right;
+	font-weight: 			bold;
+	font-size: 				14px;
+	cursor:					pointer;
+}
+
+div.jGrowl div.jGrowl-closer {
+	background-color: 		#FF0000;
+	padding-top: 			4px;
+	padding-bottom: 		4px;
+	cursor: 				pointer;
+	font-size:				.9em;
+	font-weight: 			bold;
+	text-align: 			center;
+}
+
+/** Hide jGrowl when printing **/
+@media print {
+	div.jGrowl {
+		display: 			none;
+	}
+}
+			
+div.jGrowl div.green {
+	background-color: 		#03c027;
+}
+			
+div.jGrowl div.blue {
+	background-color: 		#0026FF;
+}
+
+.hide_content{
+background:transparent url(../images/hide_content.png) repeat top left;
+position:fixed;
+top:0px;
+bottom:0px;
+left:0px;
+right:0px;
+z-index:80;
+}

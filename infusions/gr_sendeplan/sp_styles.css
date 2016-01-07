@@ -1,0 +1,14 @@
+.sp1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #555;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+}
+
+.sp2 {
+	font-size: 11px;
+	color: #555;
+	background-color: #f1f1f1;
+	padding: 4px;
+}
