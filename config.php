@@ -2,7 +2,7 @@
 // Pimped-Fusion
 // database settings
 $db_host = "localhost";
-$db_user = "web0";
+$db_user = "root";
 $db_pass = 'xe5Ld3SE';
 $db_name = "usr_web0_1";
 // DB-Prefix
