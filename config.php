@@ -3,8 +3,8 @@
 // database settings
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = 'xe5Ld3SE';
-$db_name = "usr_web0_1";
+$db_pass = '123';
+$db_name = "phpfusion";
 // DB-Prefix
 $db_prefix = "PiF_ctII_";
 define("DB_PREFIX", $db_prefix);
